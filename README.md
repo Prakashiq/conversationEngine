@@ -1,5 +1,4 @@
-# Express & ES6 API Boilerplate
-[![Build Status](https://travis-ci.org/kylealwyn/conversationEngine.svg?branch=master)](https://travis-ci.org/kylealwyn/conversationEngine)
+# Express & ES6 API 
 > Tested on Node v6 and above
 
 ## Features
@@ -14,7 +13,7 @@ First, ensure you have node and mongo installed on your system.
 
 ```sh
 # clone it
-git clone git@github.com:kylealwyn/conversationEngine.git
+git clone git@github.com:Prakashiq/conversationEngine.git
 cd conversationEngine
 
 # Make it your own
