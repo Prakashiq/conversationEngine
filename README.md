@@ -1,4 +1,5 @@
-# Express & ES6 API 
+# Express & ES6 voice conversation engine API 
+[![Build Status](https://travis-ci.org/Prakashiq/conversationEngine.svg?branch=master)](https://travis-ci.org/Prakashiq/conversationEngine)
 > Tested on Node v6 and above
 
 ## Features
@@ -16,9 +17,6 @@ First, ensure you have node and mongo installed on your system.
 git clone git@github.com:Prakashiq/conversationEngine.git
 cd conversationEngine
 
-# Make it your own
-rm -rf .git && git init
-
 # Install dependencies
 npm install
 
@@ -26,7 +24,7 @@ npm install
 npm start
 
 # Try it!
-curl -H "Content-Type: application/json" -X POST -d '{"username":"jamesdean", "email": "example@gmail.com", "password":"password1"}' http://localhost:4567/users
+curl -H "Content-Type: application/json" -X POST -d '{"username":"prakash", "email": "example@gmail.com", "password":"password1"}' http://localhost:4567/users
 ```
 
 ## Environment Variables
@@ -34,8 +32,8 @@ Place a `.env` file in the top level of the directory you've cloned. These varia
 Your `.env` file can look something like this:
 
 ```shell
-MONGO_URI=mongodb://somewhere:27017
-SESSION_SECRET=lolthisissecret
+MONGO_URI=mongodb://admin:admin@ds223509.mlab.com:23509/voiceconsole
+SESSION_SECRET=voiceconsolesecretsessionid
 ```
 
 Now we can access one of these variables with something like `process.env.MONGO_URI`!
